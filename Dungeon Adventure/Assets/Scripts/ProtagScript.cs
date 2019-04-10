@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class ProtagScript : MonoBehaviour
 {
-
-	public int xspeed;
-	public int yspeed;
+	
+	Rigidbody2D selfBody;
+	float horizontal;
+	float vertical;
+	float moveLimiter = 0.7f;
+	public float speed = 5.0f;
 	
     void Start()
     {
-        
+        selfBody = GetComponent<Rigidbody2D>();
     }
 	
-	void moveLeft()
-	{
-		if(Input.GetKey(KeyCode.A))
-		{
-			xspeed = 5;
-		}
-		else if (Input.GetKey(KeyCode.D))
-		{
-			xspeed = -5;
-		}
-		else
-		{
-			xspeed = 0;
-		}
-	}
-
     void Update()
     {
-        
+        horizontal = Input.GetAxisRaw("Horizontal");
+   		vertical = Input.GetAxisRaw("Vertical");
     }
+	
+	private void FixedUpdate()
+	{
+		if (horizontal != 0 && vertical != 0) // Check for diagonal movement
+   		{
+     		 // limit movement speed diagonally, so you move at 70% speed
+      		horizontal *= moveLimiter;
+      		vertical *= moveLimiter;
+   		}
+
+   		selfBody.velocity = new Vector2(horizontal * speed, vertical * speed);
+	}
 }
