@@ -14,7 +14,7 @@ public class ProtagScript : MonoBehaviour
 	private int isheld = 0;
 	private int count = 0;
 	public GameObject Sword;
-	public int ProtagHealth = 30;
+	public int ProtagHealth = 10;
 	private AudioSource playerHurt;
 
 	
@@ -44,6 +44,11 @@ public class ProtagScript : MonoBehaviour
 		selfBody.velocity = new Vector2(horizontal * speed, vertical * speed);
 		
 		PlayerMovementAnim();	
+		
+		if (ProtagHealth <= 0)
+		{
+			gameObject.SetActive(false);
+		}
 		
 	}
 	
