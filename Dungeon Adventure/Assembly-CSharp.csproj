@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ProtagScript.cs" />
+     <Compile Include="Assets\Scripts\RoomMaker.cs" />
+     <Compile Include="Assets\Scripts\SlimeScript.cs" />
+     <Compile Include="Assets\Scripts\SwordScript.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Unity Projects/Final Project - Dungeon Adventure/Dungeon Adventure/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
