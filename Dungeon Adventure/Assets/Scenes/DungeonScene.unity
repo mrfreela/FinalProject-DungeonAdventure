@@ -971,6 +971,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9b3798cd7a56dd44bacc95db7ac1411, type: 3}
+--- !u!1 &334012060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5815543120404940016, guid: 30c3dbe3fc789024bb8cde0ed0fd46ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 363632602}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &336816181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1254,7 +1260,7 @@ PrefabInstance:
         type: 3}
       propertyPath: protag
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1848872345}
     - target: {fileID: 4004316483105554485, guid: 30c3dbe3fc789024bb8cde0ed0fd46ff,
         type: 3}
       propertyPath: m_IsActive
@@ -4123,6 +4129,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2347489702526553141, guid: d7e7f5a5b7228fd468ef0f63f6479f2d,
+        type: 3}
+      propertyPath: Sword
+      value: 
+      objectReference: {fileID: 334012060}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7e7f5a5b7228fd468ef0f63f6479f2d, type: 3}
 --- !u!1001 &1293640160
@@ -5959,6 +5970,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9b3798cd7a56dd44bacc95db7ac1411, type: 3}
+--- !u!1 &1848872345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2347489702526553136, guid: d7e7f5a5b7228fd468ef0f63f6479f2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1289307745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1912588633
 PrefabInstance:
   m_ObjectHideFlags: 0
